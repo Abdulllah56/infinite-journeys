@@ -8,7 +8,7 @@ export default function ContactUs() {
       {/* Contact Information Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Contact Details */}
-        <div className="flex flex-col justify-center bg-gradient-to-r from-blue-500 to-blue-700 p-10 rounded-xl shadow-lg text-white">
+        <div className="flex flex-col justify-center bg-gradient-to-r from-blue-500 to-blue-700 p-6 sm:p-10 rounded-xl shadow-lg text-white">
           <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
           <p className="mb-2">
             <i className="fas fa-phone-alt mr-2"></i> Phone: +123 456 789
@@ -36,7 +36,7 @@ export default function ContactUs() {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-white p-10 rounded-xl shadow-lg">
+        <div className="bg-white p-6 sm:p-10 rounded-xl shadow-lg">
           <h3 className="text-2xl font-bold mb-6 text-blue-950">Send Us a Message</h3>
           <form className="space-y-4">
             <div>

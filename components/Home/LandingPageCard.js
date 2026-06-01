@@ -38,9 +38,9 @@ const destinations = [
 export default function DestinationGrid() {
   return (
     
-    <div className="container mx-auto mt-10">
-     <center> <h2 className="text-4xl font-extrabold text-center mb-12 text-blue-950">Popular Destinations</h2></center>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="container mx-auto px-4 sm:px-6 mt-10">
+     <center> <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-blue-950 leading-tight">Popular Destinations</h2></center>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {destinations.map((destination, index) => (
           <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg">
             <img

@@ -4,7 +4,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('https://www.aaronreedphotography.com/images/xl/Sweet-Dreams-2022.jpg')" }}>
+    <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/5e/84/76/count-the-jeeps-on-lake.jpg?w=1200&h=700&s=1')" }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       

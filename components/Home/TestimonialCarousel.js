@@ -73,7 +73,7 @@ const TestimonialCarousel = () => {
               </svg>
             </div>
             
-            <blockquote className="text-2xl italic text-white leading-relaxed mb-8 max-w-3xl">
+            <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl italic text-white leading-relaxed mb-8 max-w-3xl">
               "{testimonial.quote}"
             </blockquote>
             
@@ -105,7 +105,7 @@ const TestimonialCarousel = () => {
             </svg>
           </div>
           
-          <blockquote className="text-2xl italic text-white leading-relaxed mb-8 max-w-3xl">
+          <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl italic text-white leading-relaxed mb-8 max-w-3xl">
             "{testimonials[0].quote}"
           </blockquote>
           

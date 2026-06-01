@@ -24,11 +24,11 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { href: '/', label: 'Home', icon: '🏠' },
-    { href: '/destinations', label: 'Destinations', icon: '🌍' },
-    { href: '/experiences', label: 'Experiences', icon: '✨' },
-    { href: '/about', label: 'About', icon: '👥' },
-    { href: '/contact', label: 'Contact', icon: '📞' }
+    { href: '/', label: 'Home',  },
+    { href: '/destinations', label: 'Destinations' },
+    { href: '/experiences', label: 'Experiences' },
+    { href: '/about', label: 'About'  },
+    { href: '/contact', label: 'Contact' }
   ];
 
   const isActive = (href) => pathname === href;
@@ -151,7 +151,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               className="flex items-center justify-center space-x-2 w-full px-4 py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300"
             >
-              <span>📅</span>
+              
               <span>Book Your Journey</span>
             </Link>
           </div>
