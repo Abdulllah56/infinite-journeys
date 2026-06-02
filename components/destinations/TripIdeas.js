@@ -52,21 +52,21 @@ const TripIdeas = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-blue-950 mb-4">Trip Ideas</h2>
-          <p className="text-xl text-blue-700">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4 md:mb-6">Trip Ideas</h2>
+          <p className="text-lg md:text-xl text-blue-700 max-w-3xl mx-auto">
             Get inspired with unique trip ideas for adventurous, cultural, and nature-filled experiences across the globe.
           </p>
         </div>
 
         {/* Masonry Grid for Trip Ideas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {trips.map((trip, index) => (
+          {trips.map((trip, index) => {
+            const heightClass = trip.size === 'large' ? 'h-80 md:h-96' : trip.size === 'medium' ? 'h-72 md:h-80' : 'h-64';
+            return (
             <div
               key={index}
-              className={`relative overflow-hidden rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl h-${
-                trip.size === 'large' ? '96' : trip.size === 'medium' ? '80' : '64'
-              }`}
+              className={`relative overflow-hidden rounded-lg shadow-lg transform transition-transform duration-500 hover:-translate-y-2 hover:shadow-2xl ${heightClass}`}
             >
               {/* Background Image */}
               <img
@@ -90,7 +90,8 @@ const TripIdeas = () => {
                 </a>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

@@ -3,6 +3,30 @@
 import React from 'react';
 import { FaLeaf, FaGlobe, FaRocket, FaLightbulb, FaHeart, FaMobile } from 'react-icons/fa';
 
+const PhoneAppIcon = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+    <path d="M9 2h6"></path>
+  </svg>
+);
+
+const SproutIcon = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 22v-9"></path>
+    <path d="M12 13C8 13 4 9 4 5c4 0 8 4 8 8z"></path>
+    <path d="M12 13c4 0 8-4 8-8-4 0-8 4-8 8z"></path>
+  </svg>
+);
+
+const BulbIcon = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 18h6"></path>
+    <path d="M10 22h4"></path>
+    <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A6 6 0 1 0 7.5 11.5c.76.76 1.23 1.52 1.41 2.5"></path>
+  </svg>
+);
+
 const FuturePlans = () => {
   const plans = [
     {
@@ -114,7 +138,7 @@ const FuturePlans = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                <FaMobile className="text-3xl text-white" />
+                <PhoneAppIcon className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-2xl font-bold text-white mb-4">Smart Travel App</h4>
               <p className="text-blue-200 leading-relaxed">
@@ -124,7 +148,7 @@ const FuturePlans = () => {
 
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                <FaHeart className="text-3xl text-white" />
+                <SproutIcon className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-2xl font-bold text-white mb-4">Community Impact</h4>
               <p className="text-blue-200 leading-relaxed">
@@ -134,7 +158,7 @@ const FuturePlans = () => {
 
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                <FaLightbulb className="text-3xl text-white" />
+                <BulbIcon className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-2xl font-bold text-white mb-4">Innovation Lab</h4>
               <p className="text-blue-200 leading-relaxed">

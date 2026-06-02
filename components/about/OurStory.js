@@ -63,9 +63,7 @@ const OurStory = () => {
           <div className="space-y-8">
             <div className="group">
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full mr-4">
-                  <FaHeart className="text-2xl text-blue-950" />
-                </div>
+                
                 <h3 className="text-3xl font-bold">Where It All Began</h3>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-all duration-300">
@@ -80,9 +78,7 @@ const OurStory = () => {
 
             <div className="group">
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mr-4">
-                  <FaStar className="text-2xl text-white" />
-                </div>
+                
                 <h3 className="text-3xl font-bold">Turning Moments into Memories</h3>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-all duration-300">

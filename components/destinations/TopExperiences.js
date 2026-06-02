@@ -48,21 +48,21 @@ const experiences = [
 
 const TopExperiences = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50">
-      <div className="container mx-auto px-6">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-blue-950 mb-6">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-950 mb-4 sm:mb-6 px-2">
             Top Experiences
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mb-6"></div>
-          <p className="text-xl text-blue-700 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mb-4 sm:mb-6"></div>
+          <p className="text-base sm:text-lg md:text-xl text-blue-700 max-w-3xl mx-auto leading-relaxed px-4">
             Discover unforgettable adventures and create memories that will last a lifetime
           </p>
         </div>
 
         {/* Masonry-style Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {/* First Column */}
           <div className="space-y-8">
             {/* Large Featured Card */}

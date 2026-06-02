@@ -19,7 +19,7 @@ const exclusiveExperiences = [
   {
     name: 'VIP City Tour',
     description: 'Enjoy an exclusive tour of iconic city landmarks, with VIP access and private guides for a unique experience.',
-    imageUrl: 'https://cdn.thecrazytourist.com/wp-content/uploads/2020/06/ccimage-shutterstock_1072210547.jpg',
+    imageUrl: 'https://www.shoreexcursionsgroup.com/img/tour/MEDUBESTPRVT-2.jpg',
     buttonText: 'Join the Tour',
   },
   {
@@ -83,7 +83,7 @@ const ExclusiveExperiences = () => {
         {/* Section Title */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800 rounded-full text-sm font-medium mb-4">
-            ⭐ Premium Collection
+             Premium Collection
           </div>
           <h2 className="text-5xl md:text-6xl font-extrabold text-blue-950 mb-6">
             Exclusive & 

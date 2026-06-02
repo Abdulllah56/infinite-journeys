@@ -42,8 +42,8 @@ const TopAccommodations = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6 text-center">
         {/* Section Title */}
-        <h2 className="text-5xl font-extrabold text-blue-950 mb-8">Top Accommodations</h2>
-        <p className="text-xl text-blue-700 mb-16">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4 md:mb-8">Top Accommodations</h2>
+        <p className="text-lg md:text-xl text-blue-700 mb-12 md:mb-16 max-w-3xl mx-auto">
           Discover our handpicked accommodations for a luxurious and comfortable stay at your destination.
         </p>
 

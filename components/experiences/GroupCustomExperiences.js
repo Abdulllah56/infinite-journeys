@@ -80,7 +80,7 @@ const GroupCustomExperiences = () => {
         {/* Section Title */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-800 rounded-full text-sm font-medium mb-4">
-            👥 Group & Custom
+             Group & Custom
           </div>
           <h2 className="text-5xl md:text-6xl font-extrabold text-blue-950 mb-6">
             Group & Custom 

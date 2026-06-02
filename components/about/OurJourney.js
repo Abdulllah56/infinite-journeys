@@ -3,6 +3,29 @@
 import React from 'react';
 import { FaPlane, FaGlobe, FaSuitcase, FaRocket, FaAward, FaUsers } from 'react-icons/fa';
 
+const MapPinIcon = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+    <circle cx="12" cy="10" r="3"></circle>
+  </svg>
+);
+
+const TravelerSmileIcon = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+  </svg>
+);
+
+const MedalIcon = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="8" r="7"></circle>
+    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+  </svg>
+);
+
 const OurJourney = () => {
   const milestones = [
     {
@@ -118,7 +141,7 @@ const OurJourney = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                <FaAward className="text-3xl text-white" />
+                <MapPinIcon className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-3xl font-bold text-white mb-2">50+</h4>
               <p className="text-xl font-semibold text-blue-200 mb-2">Countries Covered</p>
@@ -127,7 +150,7 @@ const OurJourney = () => {
 
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                <FaUsers className="text-3xl text-white" />
+                <TravelerSmileIcon className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-3xl font-bold text-white mb-2">20,000+</h4>
               <p className="text-xl font-semibold text-blue-200 mb-2">Happy Travelers</p>
@@ -136,7 +159,7 @@ const OurJourney = () => {
 
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                <FaRocket className="text-3xl text-white" />
+                <MedalIcon className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-3xl font-bold text-white mb-2">15+</h4>
               <p className="text-xl font-semibold text-blue-200 mb-2">Years of Excellence</p>
@@ -148,7 +171,7 @@ const OurJourney = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="inline-flex items-center bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 text-white py-4 px-12 rounded-full text-xl font-semibold hover:from-blue-700 hover:via-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer group">
-            <FaRocket className="mr-3 group-hover:animate-bounce" />
+          
             <span>Join Us on the Next Adventure</span>
           </div>
         </div>

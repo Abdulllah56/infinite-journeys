@@ -31,9 +31,9 @@ const TravelGuides = () => {
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto px-6">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-blue-950 mb-4">Destination-Specific Travel Guides</h2>
-          <p className="text-xl text-blue-700">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4 md:mb-6">Destination-Specific Travel Guides</h2>
+          <p className="text-lg md:text-xl text-blue-700 max-w-3xl mx-auto">
             Discover detailed travel guides for your favorite destinations. Plan your trip with expert tips, best times to visit, and must-see attractions.
           </p>
         </div>
@@ -43,10 +43,10 @@ const TravelGuides = () => {
           {guides.map((guide, index) => (
             <div
               key={index}
-              className={`grid grid-cols-1 lg:grid-cols-2 items-center gap-10 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
+              className={`grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-10 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
             >
               {/* Image */}
-              <div className="relative overflow-hidden rounded-lg shadow-lg h-96">
+              <div className="relative overflow-hidden rounded-lg shadow-lg h-64 md:h-80 lg:h-96">
                 <img
                   src={guide.imageUrl}
                   alt={guide.destination}
@@ -55,13 +55,13 @@ const TravelGuides = () => {
               </div>
 
               {/* Content */}
-              <div className="flex flex-col justify-center lg:pl-10">
-                <h3 className="text-4xl font-bold text-blue-950 mb-4">{guide.destination}</h3>
-                <p className="text-lg text-gray-700 mb-4">{guide.description}</p>
-                <p className="text-lg text-gray-500 mb-6"><span className="font-semibold">Best Time to Visit: </span>{guide.bestTime}</p>
+              <div className={`flex flex-col justify-center ${index % 2 === 1 ? 'lg:pr-10' : 'lg:pl-10'}`}>
+                <h3 className="text-3xl md:text-4xl font-bold text-blue-950 mb-3 md:mb-4">{guide.destination}</h3>
+                <p className="text-base md:text-lg text-gray-700 mb-3 md:mb-4">{guide.description}</p>
+                <p className="text-base md:text-lg text-gray-500 mb-5 md:mb-6"><span className="font-semibold">Best Time to Visit: </span>{guide.bestTime}</p>
                 <a
                   href={guide.link}
-                  className="inline-block bg-blue-950 text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-900 transition duration-300"
+                  className="inline-block bg-blue-950 text-white font-semibold py-3 px-6 md:px-8 rounded-lg hover:bg-blue-900 transition duration-300 self-start"
                 >
                   Read Full Guide
                 </a>

@@ -31,16 +31,16 @@ const destinations = [
 
 const PopularDestinations = () => {
   return (
-    <section className="py-16 bg-blue-50">
-      <div className="container mx-auto px-4 md:px-6 text-center">
+    <section className="py-12 sm:py-16 bg-blue-50">
+      <div className="container mx-auto px-4 sm:px-6 text-center">
         {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-8 md:mb-12">Popular Destinations</h2>
-        <p className="text-lg md:text-xl text-blue-700 mb-12 md:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-950 mb-6 sm:mb-8 md:mb-12 px-2">Popular Destinations</h2>
+        <p className="text-base sm:text-lg md:text-xl text-blue-700 mb-8 sm:mb-12 md:mb-16 px-4 max-w-3xl mx-auto">
           Discover the most visited destinations and explore the wonders of the world.
         </p>
 
         {/* Destinations Grid */}
-        <div className="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {destinations.map((destination, index) => (
             <div
               key={index}

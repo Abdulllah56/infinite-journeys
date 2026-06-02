@@ -25,7 +25,7 @@ const HeroSection = () => {
       <div className={`relative z-10 flex flex-col items-center justify-center h-full text-center px-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         {/* Badge */}
         <div className="mb-6 px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-          <span className="text-white font-medium text-sm tracking-wide">✨ Premium Travel Experiences</span>
+          <span className="text-white font-medium text-sm tracking-wide"> Premium Travel Experiences</span>
         </div>
 
         {/* Headline */}

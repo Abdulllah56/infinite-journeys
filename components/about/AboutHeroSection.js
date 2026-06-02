@@ -14,11 +14,11 @@ const AboutUsHero = () => {
         }}
       >
         {/* Animated Background Elements */}
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-32 right-32 w-24 h-24 bg-blue-300/20 rounded-full animate-bounce"></div>
           <div className="absolute top-1/2 left-10 w-16 h-16 bg-yellow-400/30 rounded-full animate-ping"></div>
-        </div>
+        </div> */}
 
         <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center relative z-10">
           {/* Left Side: Content */}
@@ -74,38 +74,7 @@ const AboutUsHero = () => {
           </div>
 
           {/* Right Side: Floating Elements */}
-          <div className="md:w-2/5 flex justify-center md:justify-end mt-8 md:mt-0 relative">
-            <div className="relative">
-              {/* Main floating card */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border border-white/20 transform hover:scale-105 transition-all duration-500">
-                <div className="text-center text-white">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🌍</span>
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">Global Adventures</h3>
-                  <p className="text-blue-100 mb-4">Explore 50+ countries with our expert guides</p>
-                  <div className="flex justify-center space-x-2">
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating mini cards */}
-              <div className="absolute -top-4 -left-4 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-4 shadow-xl animate-float">
-                <span className="text-2xl">✈️</span>
-              </div>
-              
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-4 shadow-xl animate-float" style={{animationDelay: '1s'}}>
-                <span className="text-2xl">🏔️</span>
-              </div>
-              
-              <div className="absolute top-1/2 -right-8 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl p-4 shadow-xl animate-float" style={{animationDelay: '2s'}}>
-                <span className="text-2xl">🌊</span>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
         {/* Scroll Indicator */}

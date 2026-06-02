@@ -26,7 +26,7 @@ const categories = [
   {
     name: 'Family-Friendly',
     description: 'Fun-filled experiences designed for all ages, perfect for families.',
-    imageUrl: 'https://www.welgrowgroup.com/img.php?file=welgrowgroupuploadsNew/package/images/pkg_156982254180_travel-by-family.jpg',
+    imageUrl: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/30/78/2c/rama-meadows.jpg?w=500&h=400&s=1',
   },
   {
     name: 'Luxury',
